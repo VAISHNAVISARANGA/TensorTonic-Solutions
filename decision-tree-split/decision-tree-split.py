@@ -30,7 +30,7 @@ def decision_tree_split(X, y):
             y_right= y[right]
             gini_left=gini(y_left)
             gini_right= gini(y_right)
-            gini_child= len(y_left)/len(values)*gini_left+ len(y_right)/len(values)*gini_right
+            gini_child=len(y_left)/len(values)*gini_left+len(y_right)/len(values)*gini_right
             gain= gini_parent- gini_child
             if gain>best_gain:
                 best_gain= gain
